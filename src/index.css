@@ -1,11 +1,16 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Open Sans", sans-serif;
+  /* font-family: "Open Sans", sans-serif; */
   font-size: 16px;
   color: #333;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  background: linear-gradient(45deg, black, transparent);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
 }
 
 h1,

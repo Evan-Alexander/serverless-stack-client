@@ -2,6 +2,16 @@
   margin-top: 15px;
 }
 
+.navbar {
+  margin-top: 1rem;
+  background-color: ivory;
+}
+
 .App .navbar-brand {
   font-weight: bold;
+}
+
+.container {
+  background-color: whitesmoke;
+  border-radius: 5px;
 }
