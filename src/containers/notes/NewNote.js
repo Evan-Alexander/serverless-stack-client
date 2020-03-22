@@ -53,6 +53,7 @@ export default function NewNote(props) {
     <div className="NewNote">
       <form onSubmit={handleSubmit}>
         <FormGroup controlId="content">
+          <ControlLabel>Add a note</ControlLabel>
           <FormControl
             value={content}
             componentClass="textarea"
