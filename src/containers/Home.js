@@ -56,11 +56,11 @@ export default function Home(props) {
       <div className="lander">
         <h1>Scratch</h1>
         <p>A simple note taking app</p>
-        <div>
-          <Link to="/login" className="btn btn-info btn-lg">
+        <div className="lander__btn-container">
+          <Link to="/login" className="lander__btn">
             Login
           </Link>
-          <Link to="/signup" className="btn btn-success btn-lg">
+          <Link to="/signup" className="lander__btn">
             Signup
           </Link>
         </div>
