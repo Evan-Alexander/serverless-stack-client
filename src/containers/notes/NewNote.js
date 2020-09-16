@@ -64,14 +64,15 @@ export default function NewNote(props) {
           <ControlLabel>Attachment</ControlLabel>
           <FormControl type="file" onChange={handleFileChange} />
         </FormGroup>
-        <LoaderButton
-          block
-          type='submit'
-          bsSize="large"
-          bsStyle="primary"
-          isLoading={isLoading}
-          disabled={!validateForm()}
-        >Create</LoaderButton>
+        <div className="center">
+          <LoaderButton
+            className="create"
+            type='submit'
+            isLoading={isLoading}
+            disabled={!validateForm()}
+          >Create</LoaderButton>
+        </div>
+
       </form>
     </div>
   )

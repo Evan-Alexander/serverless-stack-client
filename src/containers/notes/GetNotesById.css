@@ -1,3 +1,9 @@
+.Notes,
+.notes,
+.NewNote {
+  padding: 0 20px 20px;
+}
+
 .Notes form {
   padding-bottom: 15px;
 }

@@ -65,15 +65,15 @@ function BillingForm({ isLoading, onSubmit, ...props}) {
           base: { fontSize: "18px", fontFamily: '"Open Sans", sans-serif' }
         }}
       />
-      <LoaderButton 
-        block
-        type="submit"
-        bsSize="large"
-        isLoading={isLoading}
-        disabled={!validateForm()}
-      >
-        Purchase
-      </LoaderButton>
+      <div className="center">
+        <LoaderButton 
+          isLoading={isLoading}
+          disabled={!validateForm()}
+        >
+          Purchase
+        </LoaderButton>
+      </div>
+
     </form>
   )
 }

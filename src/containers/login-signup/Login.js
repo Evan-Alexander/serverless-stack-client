@@ -49,15 +49,16 @@ export default function Login(props) {
             onChange={handleFieldChange}
           />
         </FormGroup>
-        <LoaderButton
-          block
-          type="submit"
-          bsSize="large"
-          isLoading={isLoading}
-          disabled={!validateForm()}
-        >
-          Login
-        </LoaderButton>
+        <div className="lander__btn-container">
+          <LoaderButton
+            className="login custom-btn"
+            isLoading={isLoading}
+            disabled={!validateForm()}
+          >
+            Login
+          </LoaderButton>
+        </div>
+
       </form>
     </div>
   );
