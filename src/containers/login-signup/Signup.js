@@ -80,10 +80,10 @@ export default function Signup(props) {
           />
           <HelpBlock>Please check your email for the code.</HelpBlock>
         </FormGroup>
+        <div className="center">
+
+        </div>
         <LoaderButton
-          block
-          type="submit"
-          bsSize="large"
           isLoading={isLoading}
           disabled={!validateConfirmationForm()}
         >
@@ -124,15 +124,15 @@ export default function Signup(props) {
             value={fields.confirmPassword}
           />
         </FormGroup>
-        <LoaderButton
-          block
-          type="submit"
-          bsSize="large"
-          isLoading={isLoading}
-          disabled={!validateForm()}
-        >
-          Signup
-        </LoaderButton>
+        <div className="center">
+          <LoaderButton
+            isLoading={isLoading}
+            disabled={!validateForm()}
+          >
+            Signup
+          </LoaderButton>
+
+        </div>
       </form>
     );
   }
